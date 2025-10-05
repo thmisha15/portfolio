@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Work | Thmisha Rasanathan</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">Thmisha R</div>
+    <nav class="nav">
+      <ul class="clearfix">
+        <li class="element"><a href="index.html">Home</a></li>
+        <li class="element"><a href="projects.html">My Work</a></li>
+        <li class="element"><a href="about.html">About Me</a></li>
+        <li class="element"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="projects">
+      <h1>My Projects</h1>
+      <div class="project-list clearfix">
+        <div class="project-item">
+          <h3>Portfolio Website</h3>
+          <p>My personal portfolio built with HTML &amp; CSS following fluid and responsive design principles.</p>
+        </div>
+
+        <div class="project-item">
+          <h3>Responsive Layout Demo</h3>
+          <p>A small class exercise demonstrating layout behavior across mobile, tablet, and desktop viewports.</p>
+        </div>
+
+        <div class="project-item">
+          <h3>Accessibility Redesign</h3>
+          <p>Enhanced a webpage to meet WCAG contrast, alt text, and semantic requirements.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="customfooter">
+    <p>&copy; <span id="year"></span> Thmisha R</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

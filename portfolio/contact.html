@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Thmisha Rasanathan</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">Thmisha R</div>
+    <nav class="nav">
+      <ul class="clearfix">
+        <li class="element"><a href="index.html">Home</a></li>
+        <li class="element"><a href="projects.html">My Work</a></li>
+        <li class="element"><a href="about.html">About Me</a></li>
+        <li class="element"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <p>If you'd like to get in touch, please fill out the form below:</p>
+
+      <form action="#" method="post" novalidate>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="2" placeholder="Your Name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+        <label for="phone">Cell Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="^[0-9\s\-\+\(\)]{7,}$" placeholder="(123) 456-7890">
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" required minlength="10" maxlength="1000" placeholder="Your message..."></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="customfooter">
+    <p>&copy; <span id="year"></span> Thmisha R</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

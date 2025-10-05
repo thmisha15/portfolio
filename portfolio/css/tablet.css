@@ -1,0 +1,28 @@
+/* For screens size 577 - 1024 px*/
+
+body {
+    font-size: 17px;
+    background-color: var(--cream);
+  }
+  
+  header {
+    padding: 1.2rem 0;
+  }
+  
+  .project-item,
+  .skill {
+    width: 45%;
+  }
+  
+  .name-title {
+    font-size: 3rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+  }
+  
+  #hero {
+    padding: 100px 40px;
+  }
+  

@@ -1,0 +1,209 @@
+/* ---------- Business Blue Palette ---------- */
+:root {
+    --cream: #F7F4F3;
+    --light-blue: #E8EFF4;
+    --muted-blue: #9DB6C9;
+    --medium-blue: #5F7B94;
+    --deep-blue: #324E66;
+  }
+  
+  /* ---------- Global ---------- */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--cream);
+    color: var(--deep-blue);
+  }
+  
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  /* ---------- Header ---------- */
+  header {
+    text-align: center;
+    background-color: var(--medium-blue);
+    color: white;
+    padding: 1.2rem 0;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  /* ---------- Navigation ---------- */
+  .element {
+    display: inline-block; 
+    margin: 0 1rem; 
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: var(--muted-blue);
+  }
+  
+  /* ---------- Footer ---------- */
+  #customfooter {
+    text-align: center;
+    background-color: var(--deep-blue);
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  /* ---------- Hero Section ---------- */
+  #hero {
+    text-align: center;
+    padding: 120px 20px;
+    background-image: linear-gradient(to bottom right, var(--cream), var(--light-blue));
+    color: var(--deep-blue);
+  }
+  
+  .name-title {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tagline {
+    font-size: 1.3rem;
+    color: var(--medium-blue);
+    font-weight: 500;
+  }
+  
+  .subtext {
+    font-size: 1rem;
+    color: var(--muted-blue);
+  }
+  
+  /* ---------- About Section ---------- */
+  #about {
+    background-color: var(--light-blue);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+  
+  #about h1 {
+    color: var(--deep-blue);
+  }
+  
+  /* ---------- Project Section ---------- */
+  #projects {
+    margin-top: 3rem;
+  }
+  
+  .project-list {
+    margin-top: 1rem;
+  }
+  
+  .project-item {
+    width: 360px;
+    background: linear-gradient(160deg, var(--deep-blue), var(--medium-blue));
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 16px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(160deg, var(--medium-blue), var(--deep-blue));
+  }
+  
+  /* ---------- Skills Section ---------- */
+  .skill {
+    width: 360px;
+    background-color: var(--muted-blue);
+    color: var(--deep-blue);
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* ---------- Contact Form ---------- */
+  #contact {
+    background-color: var(--light-blue);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+  
+  form {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea,
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--muted-blue);
+    font-family: inherit;
+  }
+  
+  button {
+    margin-top: 1rem;
+    background-color: var(--medium-blue);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--deep-blue);
+  }
+  
+  /* ---------- Responsive Defaults (fallback) ---------- */
+  @media (max-width: 600px) {
+    .project-item,
+    .skill {
+      width: 100%;
+    }
+  }
+  
